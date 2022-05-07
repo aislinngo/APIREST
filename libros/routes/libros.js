@@ -3,11 +3,11 @@ var router = express.Router();
 
 /* GET users listing. */
 // simular base de datos
-var tablaLibros={'id':1 ,'titulo':'el perfume','autor':'patrick suskind'};
+var tablaLibros={'id':1 ,'titulo':'El perfume','autor':'Patrick Suskind'};
 var tablaLibros2= [
-                  {'id':1 ,'titulo':'el perfume','autor':'patrick suskind'},
-                  {'id':2 ,'titulo':'el hobit','autor':'tolkin'},
-                  {'id':3 ,'titulo':'la biblia','autor':'apostoles'}
+                  {'id':1 ,'titulo':'El perfume','autor':'Patrick Suskind'},
+                  {'id':2 ,'titulo':'El hobbit','autor':'Tolkien'},
+                  {'id':3 ,'titulo':'La biblia','autor':'Apostoles'}
                   ];
 
 router.get('/', function(req, res, next) {
