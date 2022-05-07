@@ -51,5 +51,10 @@ router.patch('/:idLibro', (req,res,next)=>{
 
 });
 
+router.delete('/:idLibro',(req, res, next)=>{
+  var id= req.params.idLibro;
+  var eliminado=tablaLibros2.splice(id-1,1);
+  res.status(200).json("eliminado")
+})
 
 module.exports = router;
